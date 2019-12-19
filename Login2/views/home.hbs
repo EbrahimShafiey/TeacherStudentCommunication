@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Log In</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="login-button">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+  </img>
+</div>
+<div id="container">
+  <h1>Log In</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form action="/auth" method="post">
+    <input type="text" name="user" placeholder="Username" class="input-cl">
+    <input type="password" name="pass" placeholder="Password" class="input-cl">
+    <input type="submit" value="Log in" style="background-color:rgb(0, 255, 0);" class="input-cl">
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" class="checkbox input-cl" checked="checked"/>
+      <span id="remember">Remember me</span>
+      <span id="forgotten">Sign up</span>
+      
+    </div>
+</form>
+
+
+</div>
+
+
+<!-- Forgotten Password Container -->
+<div id="forgotten-container">
+   <h1>Sign up</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+
+
+  <form action="/auth" method="post">
+    <input type="radio" name="rule" value="1" ><p id="rdb">Teacher</p>  <br>
+    <input type="radio" name="rule" value="2"> <p id="rdb">Student</p> 
+
+    <input type="email" name="email" placeholder="E-mail" class="input-cl">
+    <input type="text" name="useru" placeholder="Username" class="input-cl">
+    <input type="password" name="passu" placeholder="Password" class="input-cl" >
+    <input type="password" name="passuc" placeholder="Password" class="input-cl">
+   
+    <input type="submit" value="Sign up" class="orange_btn input-cl" style="background-color:rgb(0, 255, 0);">
+    
+</form>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

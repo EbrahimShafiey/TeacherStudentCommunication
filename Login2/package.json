@@ -1,0 +1,23 @@
+{
+  "name": "expressTest",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "hbs": "^4.0.6",
+    "line-reader": "^0.4.0",
+    "mysql": "^2.17.1",
+    "node": "^13.3.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
